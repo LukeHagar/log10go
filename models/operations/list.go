@@ -7,12 +7,12 @@ import (
 )
 
 type ListGlobals struct {
-	XLog10Organization string `header:"style=simple,explode=false,name=X-Log10-Organization"`
+	XLog10Organization *string `header:"style=simple,explode=false,name=X-Log10-Organization"`
 }
 
-func (o *ListGlobals) GetXLog10Organization() string {
+func (o *ListGlobals) GetXLog10Organization() *string {
 	if o == nil {
-		return ""
+		return nil
 	}
 	return o.XLog10Organization
 }

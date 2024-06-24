@@ -29,7 +29,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
     var feedbackID string = "<value>"
 
@@ -80,7 +79,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
     var xLog10Organization *string = log10go.String("<value>")
 
@@ -131,7 +129,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
     var requestBody operations.UploadRequestBody = operations.CreateUploadRequestBodyOne(
             operations.One{

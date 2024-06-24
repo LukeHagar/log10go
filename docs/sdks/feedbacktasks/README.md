@@ -29,7 +29,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
 
     ctx := context.Background()
@@ -76,7 +75,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
     var request *components.Task = &components.Task{
         JSONSchema: components.JSONSchema{},
@@ -128,7 +126,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
     var taskID string = "<value>"
     ctx := context.Background()

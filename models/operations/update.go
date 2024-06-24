@@ -7,12 +7,12 @@ import (
 )
 
 type UpdateGlobals struct {
-	XLog10Organization string `header:"style=simple,explode=false,name=X-Log10-Organization"`
+	XLog10Organization *string `header:"style=simple,explode=false,name=X-Log10-Organization"`
 }
 
-func (o *UpdateGlobals) GetXLog10Organization() string {
+func (o *UpdateGlobals) GetXLog10Organization() *string {
 	if o == nil {
-		return ""
+		return nil
 	}
 	return o.XLog10Organization
 }

@@ -30,7 +30,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
     completion := components.Completion{
         OrganizationID: "<value>",
@@ -102,7 +101,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
     var completionID string = "<value>"
 
@@ -178,7 +176,6 @@ import(
 func main() {
     s := log10go.New(
         log10go.WithSecurity("<YOUR_API_KEY_HERE>"),
-        log10go.WithXLog10Organization("<value>"),
     )
     var xLog10Organization *string = log10go.String("<value>")
     ctx := context.Background()

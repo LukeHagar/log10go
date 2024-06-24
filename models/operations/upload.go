@@ -10,12 +10,12 @@ import (
 )
 
 type UploadGlobals struct {
-	XLog10Organization string `header:"style=simple,explode=false,name=X-Log10-Organization"`
+	XLog10Organization *string `header:"style=simple,explode=false,name=X-Log10-Organization"`
 }
 
-func (o *UploadGlobals) GetXLog10Organization() string {
+func (o *UploadGlobals) GetXLog10Organization() *string {
 	if o == nil {
-		return ""
+		return nil
 	}
 	return o.XLog10Organization
 }

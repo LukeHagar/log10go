@@ -3,15 +3,17 @@ id: af921c1a-d48f-4ab5-a412-4cf4ba8a50ad
 management:
   docChecksum: 5e7cc152f137f5919734cc70b836a4d6
   docVersion: 1.0.0
-  speakeasyVersion: 1.296.1
-  generationVersion: 2.338.1
-  releaseVersion: 0.0.1
-  configChecksum: e63fe754c82a6ad123e8ccf7b0e616cd
+  speakeasyVersion: 1.314.2
+  generationVersion: 2.349.6
+  releaseVersion: 0.0.2
+  configChecksum: cfea916ba38a564d96124530136e9740
+  repoURL: https://github.com/log10-io/log10go.git
+  installationURL: https://github.com/log10-io/log10go
 features:
   go:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.4
-    core: 3.4.10
+    core: 3.4.14
     deprecations: 2.81.1
     examples: 2.81.3
     flattening: 2.81.1

@@ -136,7 +136,7 @@ func WithSecuritySource(security func(context.Context) (components.Security, err
 // WithXLog10Organization allows setting the XLog10Organization parameter for all supported operations
 func WithXLog10Organization(xLog10Organization string) SDKOption {
 	return func(sdk *Log10) {
-		sdk.sdkConfiguration.Globals.XLog10Organization = xLog10Organization
+		sdk.sdkConfiguration.Globals.XLog10Organization = &xLog10Organization
 	}
 }
 
@@ -152,9 +152,9 @@ func New(opts ...SDKOption) *Log10 {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "0.0.1",
-			GenVersion:        "2.338.1",
-			UserAgent:         "speakeasy-sdk/go 0.0.1 2.338.1 1.0.0 github.com/log10-io/log10go",
+			SDKVersion:        "0.0.2",
+			GenVersion:        "2.349.6",
+			UserAgent:         "speakeasy-sdk/go 0.0.2 2.349.6 1.0.0 github.com/log10-io/log10go",
 			Globals:           globals.Globals{},
 			Hooks:             hooks.New(),
 		},
